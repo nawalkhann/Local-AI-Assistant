@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Local AI Assistant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="title">
+        <span class="dot" id="status-dot"></span>
+        <h1>Local AI Assistant</h1>
+      </div>
+      <div class="controls">
+        <select id="model-select"></select>
+        <button id="clear-btn" title="Clear conversation">Clear</button>
+      </div>
+    </header>
+
+    <div id="banner" class="banner hidden"></div>
+
+    <main id="chat"></main>
+
+    <form id="chat-form">
+      <textarea id="input" placeholder="Ask me anything — this never leaves your machine..." rows="1"></textarea>
+      <button type="submit" id="send-btn">Send</button>
+    </form>
+  </div>
+
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
